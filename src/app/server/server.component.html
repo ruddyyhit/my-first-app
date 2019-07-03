@@ -1,4 +1,8 @@
 <div class="container">
-    <button class="btn btn-primary" [disabled]='!allowNewServer'>Add Server</button>
+    <button class="btn btn-primary"
+     [disabled]='!allowNewServer'
+     (click)="onCreateServer()"
+    >Add Server</button>
+    <p>{{serverCreatedStatus}}</p>
 <h3>{{'Server'}} with Id {{serverId}} is {{getServerStatus()}}</h3>
 </div>
