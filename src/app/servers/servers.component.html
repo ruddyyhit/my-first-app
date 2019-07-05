@@ -1,0 +1,26 @@
+<!-- <div class="container">
+    <input
+        type="text"
+        class="form-control"
+       [(ngModel)]='serverName'
+    >
+    <button 
+    class="btn btn-primary"
+    (click)="getColor()"
+    [disabled]='!isActiveServer' >Add button</button>
+    <p [ngStyle]="{'background-color': getColor()}" 
+    [ngClass]="{online:serverStatus==='online'}">{{'Server'}}
+         with Id {{serverId}} is {{serverStatus}}</p>
+    <p [ngStyle]="{'background-color': getColor()}">{{'Server'}}
+                with Id {{serverId}} is {{serverStatus}}</p> 
+</div>
+<app-server></app-server>
+<app-server *ngFor="let serve of servers"></app-server> -->
+
+
+
+<p [ngStyle]="{'background-color': getColor()}"
+    [ngClass]="{online: serverStatus === 'online'}">{{'Server'}}
+        with Id {{serverId}} is {{getServerStatus()}}</p> 
+
+
